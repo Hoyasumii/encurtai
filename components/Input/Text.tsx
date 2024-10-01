@@ -16,7 +16,10 @@ function Text({ className, ...props }: Props) {
   return (
     <input
       type="text"
-      className={twMerge("outline-none caret-sky-600 placeholder-zinc-600 text-zinc-900", className)}
+      className={twMerge(
+        "outline-none caret-rose-600 placeholder-zinc-600 text-zinc-900 w-full",
+        className
+      )}
       name={name}
       id={name}
       {...props}

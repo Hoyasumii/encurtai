@@ -1,19 +1,26 @@
 "use client";
 
-import { ReactNode } from "react";
+import { ComponentProps } from "react";
 import Context from "./Context";
+import { twMerge } from "tailwind-merge";
 
-type Props = {
+type Props = ComponentProps<"label"> & {
   name: string;
-  children: ReactNode;
+  htmlFor?: never;
 };
 
-function Root({ name, children }: Props) {
+function Root({ name, children, className, ...props }: Props) {
   return (
     <Context.Provider value={name}>
-      <div className="duration-300 transition-all flex gap-2 py-2 px-3 border border-slate-300 focus-within:border-sky-500 focus-within:ring-2 focus-within:ring-sky-50 rounded-lg items-center group">
+      <label
+        className={twMerge(
+          "duration-300 transition-all flex gap-2 py-2 px-3 border border-slate-300 focus-within:border-rose-500 focus-within:ring-2 focus-within:ring-rose-50 rounded-lg items-center group",
+          className
+        )}
+        {...props}
+      >
         {children}
-      </div>
+      </label>
     </Context.Provider>
   );
 }

@@ -20,7 +20,7 @@ function Preffix({ icon, className, ...props }: Props) {
     <Icon
       size="18"
       className={twMerge(
-        "duration-300 transition-all text-slate-400 group-focus-within:text-sky-600",
+        "duration-300 transition-all text-slate-400 group-focus-within:text-rose-500",
         className
       )}
       {...props}
