@@ -12,7 +12,7 @@ function Body({ className }: { className?: string }) {
       {Object.values(data).map((rowValue, rowIndex) => (
         <tr key={`tbody-${rowIndex}`} className={row}>
           {Object.values(rowValue).map((col, columnIndex) => (
-            <td key={`tbody-${rowIndex}-${columnIndex}`} className={cell}>
+            <td key={`tbody-${rowIndex}-${columnIndex}`} className={twMerge("", cell)}>
               {col}
             </td>
           ))}

@@ -1,19 +1,18 @@
 import { Button, Input, Link as LinkComponent, Table } from "@/components";
 import { Link, WandSparkles } from "lucide-react";
 
+type History = {
+  type: "url" | "img";
+  target: string;
+  result: string;
+};
+
 export default function Home() {
-  const data: Array<{ name: string; age: number }> = [
+  const data: Array<History> = [
     {
-      name: "Alan",
-      age: 1,
-    },
-    {
-      name: "Zé",
-      age: 2,
-    },
-    {
-      name: "Alberto",
-      age: 3,
+      type: "url",
+      target: "https://google.com",
+      result: "https://encurtai.com/aksjnda",
     },
   ];
 
@@ -42,10 +41,10 @@ export default function Home() {
 
       <Table.Root
         data={data}
-        className="border-collapse table-auto border border-slate-300"
+        className="border-collapse table-auto border border-slate-200 rounded"
       >
-        <Table.Cell className="border border-slate-300" />
-        <Table.Header />
+        <Table.Cell className="border border-slate-200" />
+        <Table.Header className="bg-slate-200 rounded-full" />
         <Table.Body />
       </Table.Root>
     </main>

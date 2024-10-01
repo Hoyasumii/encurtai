@@ -7,6 +7,12 @@ export function Header() {
       <strong className="text-xl lowercase font-semibold text-rose-900">
         encurtai.com
       </strong>
+
+      <div className="flex-1 flex justify-end gap-4">
+        <div>Links</div>
+        <div>Imagens</div>
+        <div>API</div>
+      </div>
     </header>
   );
 }
