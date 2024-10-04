@@ -14,7 +14,7 @@ function Root({ name, children, className, ...props }: Props) {
     <Context.Provider value={name}>
       <label
         className={twMerge(
-          "duration-300 transition-all flex gap-2 py-2 px-3 border border-slate-300 focus-within:border-rose-500 focus-within:ring-2 focus-within:ring-rose-50 rounded-lg items-center group",
+          "duration-300 transition-all flex gap-2 py-2 px-3 border border-slate-300 focus-within:border-blue-600 focus-within:ring-2 focus-within:ring-rose-50 rounded-lg items-center group",
           className
         )}
         {...props}

@@ -13,14 +13,14 @@ type Props = ComponentProps<"svg"> & {
   children?: never;
 };
 
-function Preffix({ icon, className, ...props }: Props) {
+function Prefix({ icon, className, ...props }: Props) {
   const Icon = icon;
 
   return (
     <Icon
       size="18"
       className={twMerge(
-        "duration-300 transition-all text-slate-400 group-focus-within:text-rose-500",
+        "duration-300 transition-all text-slate-400 group-focus-within:text-blue-600",
         className
       )}
       {...props}
@@ -28,4 +28,4 @@ function Preffix({ icon, className, ...props }: Props) {
   );
 }
 
-export default Preffix;
+export default Prefix;

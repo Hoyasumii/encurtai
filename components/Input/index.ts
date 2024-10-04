@@ -1,9 +1,9 @@
 import Text from "./Text";
 import Root from "./Root";
-import Preffix from "./Preffix";
+import Prefix from "./Prefix";
 
 export default {
   Text,
   Root,
-  Preffix,
+  Prefix,
 } as const;

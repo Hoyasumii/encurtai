@@ -4,6 +4,7 @@ import "./globals.css";
 import { Header } from "@/components";
 
 const PoppinsFF = Poppins({
+  subsets: ["latin"],
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
 });
 

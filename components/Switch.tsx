@@ -15,7 +15,7 @@ function Switch({ active, setActive }: Props) {
   return (
     <div
       onClick={toggleActive}
-      className="bg-blue-950 border border-blue-950 w-16 h-8 rounded-full p-0.5 cursor-pointer group"
+      className="bg-accent border border-blue-950 w-16 h-8 rounded-full p-0.5 cursor-pointer group"
     >
       <div
         data-active={active}

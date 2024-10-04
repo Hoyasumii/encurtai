@@ -33,10 +33,12 @@ export function ShortLink() {
           />
         </div>
       </div>
-      <h3 className="text-blue-50 text-3xl xl:text-4xl font-bold">
-        Não Precisa de Cadastro
-      </h3>
-      <Input.Root name="teste">
+      <label htmlFor="teste">Cole seu link aqui</label>
+      <Input.Root
+        name="teste"
+        className="rounded bg-sky-100 focus-within:ring-0 w-full"
+      >
+        <Input.Prefix icon={Link} className="text-slate-500" />
         <Input.Text />
       </Input.Root>
     </section>
