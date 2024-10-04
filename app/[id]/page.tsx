@@ -1,5 +1,5 @@
-//UxvM-
 import services from "@/services";
+import Image from "next/image";
 import { redirect } from "next/navigation";
 
 export default async function Page({
@@ -15,5 +15,5 @@ export default async function Page({
 
   if (type === "url") redirect(target);
 
-  return <img src={target} alt="image" />;
+  return <Image src={target} alt="image" />;
 }
