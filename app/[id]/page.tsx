@@ -15,5 +15,13 @@ export default async function Page({
 
   if (type === "url") redirect(target);
 
-  return <Image src={target} alt="image" />;
+  return (
+    <Image
+      src={target}
+      alt="image"
+      width={1000}
+      height={1000}
+      className="w-fit h-fit"
+    />
+  );
 }
