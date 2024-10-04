@@ -7,7 +7,7 @@ function Button({ children, className, ...props }: Props) {
   return (
     <button
       className={twMerge(
-        "transition-all duration-300 hover:brightness-95 active:brightness-90  px-3 py-2 rounded-lg font-medium lowercase",
+        "transition-all duration-300 px-3 py-2 rounded-lg font-medium lowercase",
         className
       )}
       {...props}

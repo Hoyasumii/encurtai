@@ -1,6 +1,11 @@
 import type { Metadata } from "next";
+import { Poppins } from "next/font/google";
 import "./globals.css";
 import { Header } from "@/components";
+
+const PoppinsFF = Poppins({
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+});
 
 export const metadata: Metadata = {
   title: "Encurtaí - Encurte seus links",
@@ -14,7 +19,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-br">
-      <body className="antialiased bg-white text-slate-950 min-h-svh flex flex-col gap-8 items-center pb-4">
+      <body
+        className={`${PoppinsFF.className} antialiased bg-slate-50 dark:bg-stone-50 text-slate-950 min-h-svh flex flex-col gap-8 items-center pb-4`}
+      >
         <Header />
         {children}
       </body>

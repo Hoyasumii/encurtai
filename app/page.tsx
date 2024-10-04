@@ -1,52 +1,42 @@
-import { Button, Input, Link as LinkComponent, Table } from "@/components";
-import { Link, WandSparkles } from "lucide-react";
+import { Tag } from "@/components";
+import { Hanken_Grotesk } from "next/font/google";
+import { ShortLink } from "./ShortLink";
 
-type History = {
-  type: "url" | "img";
-  target: string;
-  result: string;
-};
+const HankenGroteskFF = Hanken_Grotesk({
+  subsets: ["latin"],
+});
 
 export default function Home() {
-  const data: Array<History> = [
-    {
-      type: "url",
-      target: "https://google.com",
-      result: "https://encurtai.com/aksjnda",
-    },
-  ];
-
   return (
-    <main className="flex-1 w-7/12 flex flex-col justify-between *:border-b *:border-b-slate-300">
-      <section className="pb-4 flex flex-col items-center">
-        <h3 className="font-semibold text-2xl/10">
-          Encurte seus links facilmente
-        </h3>
-        <LinkComponent className="w-10/12 group">
-          <Input.Root
-            name="my-link"
-            className="flex-1 rounded-e-none border-e-0"
+    <main className="flex-1 w-full flex flex-col gap-4 items-center">
+      <section className="w-9/12 grid grid-cols-2 gap-2 min-h-[55svh]">
+        <div className="space-y-1 py-32">
+          <h1 className="text-5xl tracking-wider font-bold text-blue-950">
+            Monitore suas campanhas
+          </h1>
+          <p
+            className={`${HankenGroteskFF.className} text-xl font-medium text-slate-600`}
           >
-            <Input.Preffix icon={Link} />
-            <Input.Text
-              placeholder="Digite aqui o seu link"
-              autoComplete="off"
-            />
-          </Input.Root>
-          <Button className="rounded-s-none flex items-center gap-2 border border-slate-300 bg-slate-50 group-focus-within:border-rose-500 group-focus-within:ring-2 group-focus-within:ring-rose-50">
-            <WandSparkles size={18} className="text-rose-600 fill-orange-300" />
-          </Button>
-        </LinkComponent>
+            Encurte links e imagens facilmente e tenha acesso a um monitoramento
+            de outro nível!
+          </p>
+        </div>
       </section>
-
-      <Table.Root
-        data={data}
-        className="border-collapse table-auto border border-slate-200 rounded"
-      >
-        <Table.Cell className="border border-slate-200" />
-        <Table.Header className="bg-slate-200 rounded-full" />
-        <Table.Body />
-      </Table.Root>
+      <ShortLink />
+      <section>
+        <p>
+          Encurte seus Links<Tag className="inline">novo</Tag>
+        </p>
+        <p>
+          Crie QR Codes <Tag className="inline">demo 2</Tag>
+        </p>
+        <p>
+          Crie e monitore suas Campanhas<Tag className="inline">demo 2</Tag>
+        </p>
+        <p>
+          API inclusa<Tag className="inline">novo</Tag>
+        </p>
+      </section>
     </main>
   );
 }
