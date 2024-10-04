@@ -1,8 +1,8 @@
 /* eslint-disable jsx-a11y/alt-text */
 "use client";
 
-import { Input, Switch } from "@/components";
-import { Image, Link } from "lucide-react";
+import { Button, Input, Switch } from "@/components";
+import { ArrowRight, Image, Link } from "lucide-react";
 import { Hanken_Grotesk } from "next/font/google";
 import { useState } from "react";
 
@@ -14,7 +14,7 @@ export function ShortLink() {
   const [active, setActive] = useState<boolean>(false);
 
   return (
-    <section className="bg-accent min-h-[40svh] w-full px-2 xl:px-44 text-slate-50 py-12 flex items-center flex-col gap-4">
+    <section className="bg-accent min-h-[30svh] w-full px-2 xl:px-44 text-slate-50 py-12 flex items-center flex-col gap-8">
       <div className="flex justify-center w-full relative items-center">
         <h1
           className={`${HankenGroteskFF.className} text-yellow-600 text-2xl font-normal uppercase flex gap-1`}
@@ -33,14 +33,20 @@ export function ShortLink() {
           />
         </div>
       </div>
-      <label htmlFor="teste">Cole seu link aqui</label>
-      <Input.Root
-        name="teste"
-        className="rounded bg-sky-100 focus-within:ring-0 w-full"
-      >
-        <Input.Prefix icon={Link} className="text-slate-500" />
-        <Input.Text />
-      </Input.Root>
+      <form className="w-4/6 flex flex-col gap-2 flex-1 justify-center">
+        <label htmlFor="teste">Cole seu link aqui</label>
+        <Input.Root
+          name="teste"
+          className="rounded bg-sky-100 border-2 border-blue-200 focus-within:ring-0 w-full"
+        >
+          <Input.Prefix icon={Link} className="text-slate-500" />
+          <Input.Text className="text-xl text-slate-700" autoComplete="off" />
+        </Input.Root>
+        <Button className="capitalize select-none text-white bg-blue-600 hover:bg-blue-700 active:bg-blue-800 cursor-pointer disabled:cursor-not-allowed disabled:bg-slate-50 disabled:border-blue-200 disabled:text-blue-200 disabled:pointer-events-none mt-2 self-start font-bold flex gap-2">
+          Encurte
+          <ArrowRight />
+        </Button>
+      </form>
     </section>
   );
 }

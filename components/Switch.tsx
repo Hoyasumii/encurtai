@@ -15,11 +15,11 @@ function Switch({ active, setActive }: Props) {
   return (
     <div
       onClick={toggleActive}
-      className="bg-accent border border-blue-950 w-16 h-8 rounded-full p-0.5 cursor-pointer group"
+      className="bg-blue-950 border border-blue-900 w-16 h-8 rounded-full p-0.5 cursor-pointer group"
     >
       <div
         data-active={active}
-        className="transition-all duration-300 bg-slate-50 h-full aspect-square rounded-full translate-x-0 data-[active=true]:translate-x-8 group-hover:bg-slate-100 group-active:bg-slate-200"
+        className="transition-all duration-300 bg-yellow-100 h-full aspect-square rounded-full translate-x-0 data-[active=true]:translate-x-8 group-hover:brightness-95 group-active:brightness-90"
       />
     </div>
   );
