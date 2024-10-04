@@ -1,5 +1,6 @@
+/* eslint-disable @next/next/no-img-element */
+
 import services from "@/services";
-import Image from "next/image";
 import { redirect } from "next/navigation";
 
 export default async function Page({
@@ -16,12 +17,9 @@ export default async function Page({
   if (type === "url") redirect(target);
 
   return (
-    <Image
+    <img
       src={target}
       alt="image"
-      width={1000}
-      height={1000}
-      className="w-fit h-fit"
     />
   );
 }

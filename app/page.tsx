@@ -1,8 +1,8 @@
 import { Tag } from "@/components";
 import { Hanken_Grotesk } from "next/font/google";
 import { ShortLink } from "./ShortLink";
-import { ForwardRefExoticComponent, ReactElement, RefAttributes } from "react";
-import { Code, Link, LucideProps, Megaphone, QrCode } from "lucide-react";
+import { ReactElement } from "react";
+import { Code, Link, Megaphone, QrCode } from "lucide-react";
 
 const HankenGroteskFF = Hanken_Grotesk({
   subsets: ["latin"],
