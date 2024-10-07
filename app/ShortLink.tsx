@@ -37,12 +37,15 @@ export function ShortLink() {
         <label htmlFor="teste">Cole seu link aqui</label>
         <Input.Root
           name="teste"
-          className="rounded bg-sky-100 border-2 border-blue-200 focus-within:ring-0 w-full"
+          className="rounded bg-sky-100 border-2 border-blue-200 focus-within:ring-yellow-50/30 w-full"
         >
           <Input.Prefix icon={Link} className="text-slate-500" />
           <Input.Text className="text-xl text-slate-700" autoComplete="off" />
         </Input.Root>
-        <Button className="capitalize select-none text-white bg-blue-600 hover:bg-blue-700 active:bg-blue-800 cursor-pointer disabled:cursor-not-allowed disabled:bg-slate-50 disabled:border-blue-200 disabled:text-blue-200 disabled:pointer-events-none mt-2 self-start font-bold flex gap-2">
+        <Button
+          className="capitalize select-none text-white bg-blue-600 hover:bg-blue-700 active:bg-blue-800 cursor-pointer disabled:cursor-not-allowed disabled:bg-blue-200 disabled:border-blue-200 disabled:text-slate-400 disabled:pointer-events-none mt-2 self-start font-bold flex gap-2"
+          disabled
+        >
           Encurte
           <ArrowRight />
         </Button>

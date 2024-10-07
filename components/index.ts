@@ -5,3 +5,6 @@ export { default as Button } from "./Button";
 export { default as Table } from "./Table";
 export { default as Tag } from "./Tag";
 export { default as Switch } from "./Switch";
+export { default as Paragraph } from "./Paragraph";
+export { default as Heading } from "./Heading";
+export { default as Features } from "./Features";
