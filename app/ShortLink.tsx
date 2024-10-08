@@ -43,7 +43,8 @@ export function ShortLink() {
           <Input.Text className="text-xl text-slate-700" autoComplete="off" />
         </Input.Root>
         <Button
-          className="capitalize select-none text-white bg-blue-600 hover:bg-blue-700 active:bg-blue-800 cursor-pointer disabled:cursor-not-allowed disabled:bg-blue-200 disabled:border-blue-200 disabled:text-slate-400 disabled:pointer-events-none mt-2 self-start font-bold flex gap-2"
+          theme="default"
+          className="flex items-center gap-2 w-fit mt-2"
           disabled
         >
           Encurte

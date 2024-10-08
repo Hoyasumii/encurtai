@@ -1,4 +1,5 @@
 import {
+  Button,
   Dialog,
   Features,
   Footer,
@@ -61,23 +62,6 @@ export default function Home() {
         </section>
       </main>
       <Footer />
-      <Dialog.Root>
-        <Dialog.Trigger>
-          <button className="bg-blue-600 text-white">Active</button>
-        </Dialog.Trigger>
-        <Dialog.Portal>
-          <Dialog.Overlay />
-          <Dialog.Content>
-            <Dialog.Header title="Hello World" hasCloseButton />
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
-            provident, eaque expedita explicabo quae similique voluptatibus esse
-            labore voluptates natus sequi aspernatur voluptas, assumenda
-            eligendi adipisci perspiciatis officia, consectetur dolorum
-            repudiandae consequuntur quas qui odit asperiores. Unde, debitis!
-            Doloribus, quae.
-          </Dialog.Content>
-        </Dialog.Portal>
-      </Dialog.Root>
     </>
   );
 }
