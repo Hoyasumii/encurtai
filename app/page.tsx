@@ -1,12 +1,4 @@
-import {
-  Button,
-  Dialog,
-  Features,
-  Footer,
-  Header,
-  Heading,
-  Paragraph,
-} from "@/components";
+import { Features, Footer, Header, Heading, Paragraph } from "@/components";
 import { ShortLink } from "./ShortLink";
 import { Code, Link, Megaphone, QrCode } from "lucide-react";
 import React from "react";
