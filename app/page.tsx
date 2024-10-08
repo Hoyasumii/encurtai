@@ -1,15 +1,19 @@
-import { Features, Header, Heading, Paragraph } from "@/components";
+// "use client";
+
+import {
+  Dialog,
+  Features,
+  Footer,
+  Header,
+  Heading,
+  Paragraph,
+} from "@/components";
 import { ShortLink } from "./ShortLink";
-import { ReactElement } from "react";
 import { Code, Link, Megaphone, QrCode } from "lucide-react";
 import React from "react";
 
 export default function Home() {
-  const features: Array<{
-    description: string;
-    icon: ReactElement;
-    tag?: string;
-  }> = [
+  const features = [
     {
       description: "Encurte seus Links",
       icon: <Link className="text-white" size={30} />,
@@ -34,18 +38,18 @@ export default function Home() {
     <>
       <Header />
       <main className="flex-1 w-full flex flex-col gap-4 items-center">
-        <section className="w-9/12 grid grid-cols-2 gap-2 min-h-[55svh]">
-          <div className="space-y-1 py-32">
-            <Heading>Muito mais que um Encurtador de Link</Heading>
-            <Paragraph>
-              Encurte links e imagens facilmente e tenha acesso a um
-              monitoramento de outro nível!
-            </Paragraph>
-          </div>
+        <section className="w-11/12 xl:w-2/4 py-32 flex flex-col items-center gap-2 min-h-[55svh]">
+          <Heading className="text-center">
+            Muito mais que um Encurtador de Link
+          </Heading>
+          <Paragraph className="text-center w-11/12 xl:w-4/5">
+            Encurte links e imagens facilmente e tenha acesso a um monitoramento
+            de outro nível!
+          </Paragraph>
         </section>
         <ShortLink />
         <section className="w-9/12 py-20 flex flex-col gap-8 items-center">
-          <div className="space-y-2">
+          <div className="flex flex-col items-center gap-2">
             <Heading>Use e Abuse!</Heading>
             <Paragraph>
               O Encurtaí é a ferramenta ideal para monitorar e dar identidade ao
@@ -58,6 +62,24 @@ export default function Home() {
           />
         </section>
       </main>
+      <Footer />
+      <Dialog.Root>
+        <Dialog.Trigger>
+          <button className="bg-blue-600 text-white">Active</button>
+        </Dialog.Trigger>
+        <Dialog.Portal>
+          <Dialog.Overlay />
+          <Dialog.Content>
+            <Dialog.Header title="Hello World" hasCloseButton />
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
+            provident, eaque expedita explicabo quae similique voluptatibus esse
+            labore voluptates natus sequi aspernatur voluptas, assumenda
+            eligendi adipisci perspiciatis officia, consectetur dolorum
+            repudiandae consequuntur quas qui odit asperiores. Unde, debitis!
+            Doloribus, quae.
+          </Dialog.Content>
+        </Dialog.Portal>
+      </Dialog.Root>
     </>
   );
 }

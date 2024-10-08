@@ -8,3 +8,6 @@ export { default as Switch } from "./Switch";
 export { default as Paragraph } from "./Paragraph";
 export { default as Heading } from "./Heading";
 export { default as Features } from "./Features";
+export { default as Footer } from "./Footer";
+export { default as Logo } from "./Logo";
+export { default as Dialog } from "./Dialog";

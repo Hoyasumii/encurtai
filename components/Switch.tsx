@@ -24,4 +24,5 @@ function Switch({ active, setActive }: Props) {
     </div>
   );
 }
+
 export default Switch;

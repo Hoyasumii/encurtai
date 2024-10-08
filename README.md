@@ -1,3 +1,2 @@
 - [ ] Componentizar o Button
-- [ ] Montar o Footer
 - [ ] Criar um Modal
