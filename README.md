@@ -1,2 +1,0 @@
-- [ ] Componentizar o Button
-- [ ] Criar um Modal

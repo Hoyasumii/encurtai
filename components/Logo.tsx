@@ -12,7 +12,7 @@ function Logo({ theme = "light", ...props }: Props) {
   return (
     <div
       data-theme={theme}
-      className="flex items-center gap-1 group text-blue-950 data-[theme=dark]:text-blue-50"
+      className="flex items-center gap-1 group text-blue-950 data-[theme=dark]:text-blue-50 select-none"
       {...props}
     >
       <Flame fontSize={30} className="fill-blue-300 text-blue-700 font-bold" />
