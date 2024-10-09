@@ -23,7 +23,7 @@ function Features({ items, className }: Props) {
           <div className="bg-gradient-to-tr from-blue-500 to-blue-700 p-1 rounded-xl h-12 aspect-square flex items-center justify-center">
             {feature.icon}
           </div>
-          {feature.description}
+          <p className="flex-1">{feature.description}</p>
           {feature.tag && <Tag className="h-fit -mt-3">{feature.tag}</Tag>}
         </li>
       ))}

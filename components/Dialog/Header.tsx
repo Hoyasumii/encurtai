@@ -19,9 +19,9 @@ function Header({ className, title, hasCloseButton, ...props }: Props) {
   };
 
   return (
-    <div
+    <header
       className={twMerge(
-        "border-b pb-2 border-b-slate-200 flex justify-between items-center",
+        "max-w-full border-b pb-2 border-b-slate-200 flex justify-between items-center",
         className
       )}
       {...props}
@@ -34,7 +34,7 @@ function Header({ className, title, hasCloseButton, ...props }: Props) {
           size={30}
         />
       )}
-    </div>
+    </header>
   );
 }
 

@@ -29,7 +29,7 @@ export default function Home() {
     <>
       <Header />
       <main className="flex-1 w-full flex flex-col gap-4 items-center">
-        <section className="w-11/12 xl:w-2/4 py-32 flex flex-col items-center gap-2 min-h-[55svh]">
+        <section className="w-11/12 sm:w-10/12 md:w-3/4 lg:w-2/4 py-32 flex flex-col items-center gap-2 min-h-[55svh]">
           <Heading className="text-center">
             Muito mais que um Encurtador de Link
           </Heading>
@@ -39,17 +39,17 @@ export default function Home() {
           </Paragraph>
         </section>
         <ShortLink />
-        <section className="w-9/12 py-20 flex flex-col gap-8 items-center">
+        <section className="w-11/12 sm:w-10/12 lg:w-9/12 py-20 flex flex-col gap-8 items-center">
           <div className="flex flex-col items-center gap-2">
             <Heading>Use e Abuse!</Heading>
-            <Paragraph>
+            <Paragraph className="text-center">
               O Encurtaí é a ferramenta ideal para monitorar e dar identidade ao
               seu negócio
             </Paragraph>
           </div>
           <Features
             items={features}
-            className="pt-4 grid grid-cols-2 gap-8 px-4 w-9/12"
+            className="pt-4 flex flex-col md:grid md:grid-cols-2 gap-8 px-4 w-full md:w-9/12"
           />
         </section>
       </main>

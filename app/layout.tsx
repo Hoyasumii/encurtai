@@ -20,7 +20,7 @@ export default function RootLayout({
   return (
     <html lang="pt-br">
       <body
-        className={`${PoppinsFF.className} antialiased bg-slate-50 dark:bg-stone-50 text-slate-950 w-svw min-h-svh flex flex-col gap-8 items-center relative box-border`}
+        className={`${PoppinsFF.className} antialiased bg-slate-50 dark:bg-stone-50 text-slate-950 min-h-svh flex flex-col gap-8 items-center relative`}
       >
         {children}
       </body>

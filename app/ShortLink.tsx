@@ -15,7 +15,7 @@ export function ShortLink() {
 
   return (
     <section className="bg-accent min-h-[30svh] w-full px-2 xl:px-44 text-slate-50 py-12 flex items-center flex-col gap-8">
-      <div className="flex justify-center w-full relative items-center">
+      <div className="flex justify-between md:justify-center relative items-center w-full">
         <h1
           className={`${HankenGroteskFF.className} text-yellow-600 text-2xl font-normal uppercase flex gap-1`}
         >
@@ -33,7 +33,7 @@ export function ShortLink() {
           />
         </div>
       </div>
-      <div className="w-4/6 flex flex-col gap-2 flex-1 justify-center">
+      <div className="w-11/12 md:w-4/6 flex flex-col gap-2 flex-1 justify-center">
         {active ? null : (
           <>
             <label htmlFor="teste">Cole seu link aqui</label>
