@@ -30,7 +30,7 @@ function Header({ className, title, hasCloseButton, ...props }: Props) {
       {hasCloseButton && (
         <X
           onClick={handleClose}
-          className="hover:bg-slate-100 active:bg-slate-200 rounded-md p-1"
+          className="transition-all duration-300 text-slate-300 hover:text-slate-400 hover:bg-slate-100 active:bg-slate-200 rounded-md p-1"
           size={30}
         />
       )}

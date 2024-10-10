@@ -24,7 +24,11 @@ function Features({ items, className }: Props) {
             {feature.icon}
           </div>
           <p className="flex-1">{feature.description}</p>
-          {feature.tag && <Tag className="h-fit -mt-3">{feature.tag}</Tag>}
+          {feature.tag && (
+            <Tag className="h-fit -mt-3 dark:bg-blue-50 dark:text-blue-950">
+              {feature.tag}
+            </Tag>
+          )}
         </li>
       ))}
     </ul>

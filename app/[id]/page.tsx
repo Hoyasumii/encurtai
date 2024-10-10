@@ -12,14 +12,7 @@ export default async function Page({
 
   if (response.status !== 200) redirect("/");
 
-  const { type, target } = response.data;
+  const target = response.data;
 
-  if (type === "url") redirect(target);
-
-  return (
-    <img
-      src={target}
-      alt="image"
-    />
-  );
+  redirect(target);
 }
