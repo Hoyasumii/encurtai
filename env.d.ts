@@ -5,5 +5,6 @@ declare namespace NodeJS {
     ENV: string;
     DB_HOST: string;
     DAYS_TO_REMOVE_LINK: string;
+    CRON_SECRET: string;
   }
 }
