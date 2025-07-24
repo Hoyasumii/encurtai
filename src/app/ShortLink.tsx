@@ -1,11 +1,11 @@
 /* eslint-disable jsx-a11y/alt-text */
 "use client";
 
-import { Button, Input } from "@/components";
-import services from "@/services";
+import { Button, Input } from "@/src/components";
+import services from "@/src/services";
 import { ArrowRight, Copy, Link } from "lucide-react";
 import { Hanken_Grotesk } from "next/font/google";
-import { ChangeEvent, useState } from "react";
+import { type ChangeEvent, useState } from "react";
 import { z } from "zod";
 
 const HankenGroteskFF = Hanken_Grotesk({

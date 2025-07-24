@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 
-import services from "@/services";
+import services from "@/src/services";
 import { redirect } from "next/navigation";
 
 export default async function Page({
