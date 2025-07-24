@@ -1,5 +1,5 @@
 import { Flame } from "lucide-react";
-import { ComponentProps } from "react";
+import type { ComponentProps } from "react";
 import Tag from "./Tag";
 
 type Props = ComponentProps<"div"> & {

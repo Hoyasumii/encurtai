@@ -1,6 +1,6 @@
 "use client";
 
-import { createContext, Dispatch, SetStateAction } from "react";
+import { createContext, type Dispatch, type SetStateAction } from "react";
 
 type Context = {
   open: boolean;

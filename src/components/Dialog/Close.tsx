@@ -1,6 +1,6 @@
 "use client";
 
-import { ComponentProps, useContext } from "react";
+import { type ComponentProps, useContext } from "react";
 import Context from "./Context";
 
 type Props = ComponentProps<"button"> & {

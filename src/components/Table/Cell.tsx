@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useContext } from "react";
+import { useContext } from "react";
 import Context from "./Context";
 
 type Props = {
@@ -12,6 +12,7 @@ function Cell({ className }: Props) {
 
   setCell(className);
 
+  // biome-ignore lint/complexity/noUselessFragments: <Muita coisa pra fazer>
   return <></>;
 }
 

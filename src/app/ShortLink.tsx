@@ -1,8 +1,8 @@
 /* eslint-disable jsx-a11y/alt-text */
 "use client";
 
-import { Button, Input } from "@/src/components";
-import services from "@/src/services";
+import { Button, Input } from "@/components";
+import services from "@/services";
 import { ArrowRight, Copy, Link } from "lucide-react";
 import { Hanken_Grotesk } from "next/font/google";
 import { type ChangeEvent, useState } from "react";

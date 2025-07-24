@@ -1,7 +1,7 @@
 "use client";
 
 import { X } from "lucide-react";
-import { ComponentProps, useContext } from "react";
+import { type ComponentProps, useContext } from "react";
 import Context from "./Context";
 import { twMerge } from "tailwind-merge";
 

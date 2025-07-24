@@ -10,9 +10,9 @@ function Body({ className }: { className?: string }) {
   return (
     <tbody className={twMerge("", className)}>
       {Object.values(data).map((rowValue, rowIndex) => (
-        <tr key={`tbody-${rowIndex}`} className={row}>
+        <tr key={`tbody-${rowIndex.toString()}`} className={row}>
           {Object.values(rowValue).map((col, columnIndex) => (
-            <td key={`tbody-${rowIndex}-${columnIndex}`} className={twMerge("", cell)}>
+            <td key={`tbody-${rowIndex}-${columnIndex.toString()}`} className={twMerge("", cell)}>
               {col}
             </td>
           ))}

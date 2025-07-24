@@ -1,4 +1,4 @@
-import { Features, Header, Heading, Paragraph } from "@/src/components";
+import { Features, Header, Heading, Paragraph } from "@/components";
 import { ShortLink } from "./ShortLink";
 import { Code, Link, Megaphone, QrCode } from "lucide-react";
 

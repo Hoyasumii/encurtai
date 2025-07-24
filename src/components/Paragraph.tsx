@@ -1,5 +1,5 @@
 import { Hanken_Grotesk } from "next/font/google";
-import { ComponentProps } from "react";
+import type { ComponentProps } from "react";
 import { twMerge } from "tailwind-merge";
 
 const HankenGroteskFF = Hanken_Grotesk({

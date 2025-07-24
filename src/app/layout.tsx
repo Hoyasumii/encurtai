@@ -18,7 +18,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="pt-br">
+    <html lang="pt">
       <body
         className={`${PoppinsFF.className} antialiased bg-slate-50 dark:bg-stone-900 dark:text-slate-50 text-slate-950 min-h-svh flex flex-col gap-8 items-center relative`}
       >

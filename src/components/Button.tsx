@@ -1,5 +1,5 @@
-import { ComponentProps } from "react";
-import { tv, VariantProps } from "tailwind-variants";
+import type { ComponentProps } from "react";
+import { tv, type VariantProps } from "tailwind-variants";
 
 const button = tv({
   base: "transition-all duration-300 px-3 py-2 rounded-lg font-medium capitalize select-none disabled:cursor-not-allowed disabled:pointer-events-none cursor-pointer",

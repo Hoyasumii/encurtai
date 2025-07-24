@@ -11,7 +11,7 @@ function Header({ className }: { className?: string }) {
     <thead className={twMerge("pt-20", className)}>
       <tr className={row}>
         {Object.keys(data[0]).map((row, index) => (
-          <th key={`thead-${row}-${index}`} className="text-left">
+          <th key={`thead-${row}-${index.toString()}`} className="text-left">
             {row}
           </th>
         ))}

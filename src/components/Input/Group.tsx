@@ -1,6 +1,6 @@
 "use client";
 
-import { ComponentProps, useContext } from "react";
+import { type ComponentProps, useContext } from "react";
 import { twMerge } from "tailwind-merge";
 import Context from "./Context";
 

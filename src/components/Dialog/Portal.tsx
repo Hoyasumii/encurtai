@@ -1,6 +1,6 @@
 "use client";
 
-import { ReactNode, useContext, useEffect, useState } from "react";
+import { type ReactNode, useContext, useEffect, useState } from "react";
 import { createPortal } from "react-dom";
 import Context from "./Context";
 import { Hanken_Grotesk } from "next/font/google";
