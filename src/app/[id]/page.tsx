@@ -4,15 +4,15 @@ import services from "@/services";
 import { redirect } from "next/navigation";
 
 export default async function Page({
-  params: { id },
+	params: { id },
 }: {
-  params: { id: string };
+	params: { id: string };
 }) {
-  const response = await services.get(`/link/${id}`);
+	const response = await services.get(`/link/${id}`);
 
-  if (response.status !== 200) redirect("/");
+	if (response.status !== 200) redirect("/");
 
-  const target = response.data;
+	const { data } = response.data as { success: boolean; data?: string };
 
-  redirect(target);
+	redirect(data || "https://encurtai.com");
 }
