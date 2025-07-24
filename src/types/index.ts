@@ -1,5 +1,4 @@
-export { type BaseResponse } from "./BaseResponse";
-export { type ServiceResponse } from "./ServiceResponse";
-export { SetContentType } from "./SetContentType";
-export { HTTPMethods } from "./HTTPMethods";
-export { RouteDocs } from "./RouteDocs";
+export type { BaseResponse } from "./BaseResponse";
+export type { ServiceResponse } from "./ServiceResponse";
+export type { SetContentType } from "./SetContentType";
+export type { HTTPMethods } from "./HTTPMethods";
