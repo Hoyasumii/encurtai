@@ -14,5 +14,14 @@ export async function POST(request: NextRequest) {
 
 	const linkId = await service.create(data.target);
 
-	return Response.json({ success: true, data: linkId });
+	return Response.json(
+		{ success: true, data: linkId },
+		{
+			headers: {
+				"Access-Control-Allow-Origin": "*",
+				"Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, OPTIONS",
+				"Access-Control-Allow-Headers": "Content-Type, Authorization",
+			},
+		},
+	);
 }
